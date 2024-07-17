@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form submit</title>
+    <link rel="stylesheet" href="/c.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="feedback">
+        <img src="/images/icon-star.svg" alt="pic" class="star" />
+        <h2>How did we do?</h2>
+        <p>
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <div class="rating">
+          <input type="radio" id="rating-1" name="rating" value="1" />
+          <label for="rating-1">1</label>
+          <input type="radio" id="rating-2" name="rating" value="2" />
+          <label for="rating-2">2</label>
+          <input type="radio" id="rating-3" name="rating" value="3" />
+          <label for="rating-3">3</label>
+          <input type="radio" id="rating-4" name="rating" value="4" />
+          <label for="rating-4">4</label>
+          <input type="radio" id="rating-5" name="rating" value="5" />
+          <label for="rating-5">5</label>
+        </div>
+        <div class="d">
+          <button class="submit" onclick="submitRating()">SUBMIT</button>
+        </div>
+      </div>
+      <!---reaction-->
+      <div class="thank-you">
+        <div class="middle">
+          <div class="img">
+            <img src= /images/illustration-thank-you.svg alt="Thank you"/>
+          </div>
+          <p class="pic">
+            You selected <span id="selected-rating"></span> out of 5
+          </p>
+          <h2 class="big">Thank you!</h2>
+          <p class="final">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don't hesitate to get in touch!
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
